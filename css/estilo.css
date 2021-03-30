@@ -1,0 +1,374 @@
+html{   font-family: Arial,Helvetica Neue,Helvetica,sans-serif; }
+
+
+p{
+  font-size: clamp(1rem, 0.7153rem + 1.6368vw, 1.4rem);
+  font-family: 'Source Serif Pro', serif;
+}
+
+h1, h2, h3,h4, h5, h6{
+  font-family: GothamPro;
+}
+
+
+/*******FONTS*****/
+.source-serif-pro{font-family: 'Source Serif Pro', serif;}
+
+
+.font-italic{ font-style: italic;}
+
+.font-weight-bold{ font-weight: bold;}
+
+.font-16-22px{ font-size: min(max(1rem, 4vw), 22px);}
+
+.letter-spacing-1px{ letter-spacing: 1px;}
+
+.letter-spacing-2px{ letter-spacing: 2px;}
+
+.break-word{
+    word-wrap: break-word;      /* IE 5.5-7 */
+      white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+      white-space: pre-wrap;      /* current browsers */
+}
+
+.recuo{
+  text-indent: 1em;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+
+/*******Cores Winter********/
+.winter-preto{
+    color:#030406;
+}
+
+.bg-winter-preto{
+  background-color: #030406;
+}
+
+.winter-neve{
+    color: #F6F7F3;
+}
+
+.bg-winter-neve{
+    background-color: #F6F7F3;
+}
+
+.winter-douradinho{
+    color: #C3B7AC;
+}
+
+.bg-winter-douradinho{
+    background-color: #C3B7AC;
+}
+
+.winter-douradao{
+    color:#E7E4DC;
+}
+
+.bg-winter-douradao{
+  background-color:#E7E4DC;
+}
+
+.winter-marrom{
+  color: #38383A;
+}
+
+.bg-winter-marrom{
+  background-color: #38383A;
+}
+
+.bg-winter-rosa{
+  background-color: #DDCCD0;
+}
+
+/*####### ANIMAÇÕES ######*/
+
+.js [data-anime]{
+  opacity: 0; 
+}
+
+.js .fadeInDown {
+  transform: translate3d(0,-20px,0);
+}
+
+.js .fadeInUp {
+  transform: translate3d(0,20px,0);
+}
+
+.js .fadeInRight {
+  transform: translate3d(20px,0,0);
+}
+
+.js .fadeInLeft {
+  transform: translate3d(-20px,0,0);
+}
+
+
+.js .anime{
+  opacity: 1;
+  transform: none;
+  transition: opacity 800ms, transform 800ms;
+}
+
+/*############# SEPARADOR ##################*/
+.separador-secao{
+  position: relative;
+  height: 20px;
+  border-radius: 0% 0% 70% 70%;
+  z-index: 100;
+}
+
+#separador-secao-capa{
+  height: 2.5em;
+}
+
+
+/*############## HEADER - NAVEGAÇÃO##############*/
+.navbar-nav .nav-link {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar-toggler {
+    text-align: center;
+}
+
+/*******BOTOES*****/
+.botao {
+
+  background-color: #DBBE54; /* Dourado */  
+  border: 2px solid #707070; /* cinza */    
+  display: inline-block;
+  border-radius: 9px;  
+  transition: all 0.5s;
+  height: 2.5em;
+  line-height : 100%;
+  vertical-align:middle;
+}
+
+.botao:hover{
+    background-color: #FFDE64;
+    border-color: #DBBE54;
+}
+
+.botao span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.botao span:after {
+  content: '\00bb';
+ 
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.botao:hover span {
+  padding-right: 25px;
+}
+
+.botao:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.botao-link{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: bold;    
+}
+
+.botao-link, .botao-link:hover{
+    color:#030406;
+    font-size: 12px;
+}
+
+
+
+/*########## HOME-CAPA ##########*/
+#separador-capa{
+    width:70px;
+    border:3px solid;
+    background-color:#C3B7AC  
+}
+
+/*######CARROUSEL######*/
+.carousel{
+  margin-top: -1em;
+
+}
+.carousel-inner {
+  height: 75vh;
+}
+.carousel-item{
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#carousel-1{
+        background-image: url('../img/Slider-1.jpg');
+        background-position: 30% center;        
+}
+
+#carousel-2{
+        background-image: url('../img/Slider-2.jpg');
+        background-position: 80% 66%;       
+}
+
+#carousel-3 {
+        background-image: url('../img/Slider-3.jpg');
+        background-position: 33% 62%;        
+}
+
+.carousel-indicators li {
+    height: 40px;
+    width: 40px;
+    border-radius: 15px;
+  }
+
+
+
+/*###########HOME- CONTATO ###########*/
+#contato{
+  background-color: #DDCCD0;
+  min-height: 100px;
+
+}
+
+.separador-marrom{
+    -ms-flex: 0 0 70px;
+    flex: 0 0 70px;
+    width: 70px;
+    border:3px solid;
+    background-color:#38383A;
+}
+
+/*###########HOME- SEÇÃO PROCEDIMENTOS ###########*/
+#img-endoscopia{
+  content:url('../img/endoscopia.jpg');
+}
+
+#img-colonoscopia{
+  content:url('../img/colonoscopia.jpg');
+}
+
+#img-cpre{
+  content:url('../img/cpre.jpg');
+}
+
+#img-bariatrica{
+  content:url('../img/bariatrica.jpg');
+}
+
+#img-capsula{
+  content:url('../img/capsula.jpg');
+}
+
+.owl-stage a, .owl-stage a:hover{
+  text-decoration: none;
+  color: inherit;
+}
+
+.owl-stage a:hover{
+  background-color: #F6F7F3;
+
+}
+
+
+
+/*###########HOME- SEÇÃO DEPOIMENTOS ###########*/
+
+#separador-depoimentos{
+    width:70px;
+    border:3px solid;
+    background-color:#38383A;
+}
+
+.justify-content-space-evenly{
+  justify-content:space-evenly; 
+}
+
+/*########### Dra Layce ###########*/
+#img-layce{
+  min-height: 480px;
+  background: url('../img/Dra-Layce2.png') no-repeat center bottom ;
+  background-size: auto;
+}
+
+
+
+/*###########HOME- FOOTER ###########*/
+footer{
+  background-color: #38383A;
+}
+
+
+.social-media-icon{
+  font-size: 2em;
+  color: #38383A;
+  vertical-align:middle;
+}
+
+.social-media-icon:hover{
+  color: #636368;
+}
+
+/* *
+* FC Instagram - Development FCV Team
+* Website: https://eplus.dev
+* Since: 2019-11
+* Version: v2.0.0
+* */
+
+/* BEGIN - MEDIUM */
+.instagram-gallery-medium {
+    /*width: 480*2px;*/
+    cursor: pointer;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.instagram-gallery-medium > a {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.instagram-gallery-medium > a > video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+    .instagram-gallery-medium {
+        width: 320px;
+    }
+
+    .instagram-gallery-medium > a {
+        width: 100px;
+        height: 100px;
+        margin: 2px;
+    }
+}
+
+/* END - MEDIUM */
